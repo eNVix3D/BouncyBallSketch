@@ -1,8 +1,8 @@
-//Nicklas 2i Bouncy Ball 06.09.2021
+//Nicklas 2i Bouncy Ball 06.09.2021 | Basic Sound library fra selve processing brugt
 import processing.sound.*;
 SoundFile thud;
 
-float ballSpeed = random(1,10);
+float ballSpeed = random(1,5);
 float ballXspeed = ballSpeed;
 float ballYspeed = ballSpeed;
 float ballXpos = random(260,340);
