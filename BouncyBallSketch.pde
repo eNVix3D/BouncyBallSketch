@@ -1,4 +1,6 @@
 //Nicklas 2i Bouncy Ball 06.09.2021
+import processing.sound.*;
+SoundFile thud;
 
 float ballSpeed = random(1,10);
 float ballXspeed = ballSpeed;
@@ -15,11 +17,12 @@ float ballColorB = random(0,255);
 
 float BGcolor = 0;
 boolean BGendColor = false;
-float BGspeed = random(1,5);
+float BGspeed = random(1,10);
 
 void setup(){
  size(1000,1000); 
  frameRate(60);
+ thud = new SoundFile(this, "vineThud.mp3");
 }
 
 void draw(){
@@ -60,6 +63,7 @@ void draw(){
    ballColorR = random(0,255);
    ballColorG = random(0,255);
    ballColorB = random(0,255);
+   thud.play();
   }
   
   if (ballYpos >= rectYsize + 250 || ballYpos <= 250) {
@@ -68,6 +72,7 @@ void draw(){
    ballColorR = random(0,255);
    ballColorG = random(0,255);
    ballColorB = random(0,255);
+   thud.play();
   }
 
 }
