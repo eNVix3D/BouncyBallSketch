@@ -1,10 +1,10 @@
-//Nicklas 2i Bouncy Ball 30.08.2021
+//Nicklas 2i Bouncy Ball 06.09.2021
 
 float ballSpeed = random(1,10);
 float ballXspeed = ballSpeed;
 float ballYspeed = ballSpeed;
-float ballXpos = 500;
-float ballYpos = 400;
+float ballXpos = random(360,500);
+float ballYpos = random(360,500);
 
 float rectXsize = random(100,750);
 float rectYsize = random(100,750);
